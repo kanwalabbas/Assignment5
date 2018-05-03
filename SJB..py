@@ -23,7 +23,7 @@ for i in range(inp):
 waiting_time[0]=0
 for i in range(inp):
     waiting_time[i]=0
-    for j in range(i):
+    for j in range(inp-i):
          waiting_time[i]+=burst_time[j]
         
 turn_around[0]=0
