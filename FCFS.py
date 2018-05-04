@@ -10,8 +10,8 @@ waiting_time=[0]*inp
 turn_arround=[0]*inp
 
 while i<inp:
-    arrival_time=input("Enter the arrival time:")
-    burst_time=input("Enter the burst time:")
+    arrival_time[i]=input("Enter the arrival time:")
+    burst_time[i]=input("Enter the burst time:")
     i=i+1
     
 for i in range(inp):
