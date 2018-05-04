@@ -35,7 +35,7 @@ for i in range(inp):
          waiting_time[i]+=burst_time[j]
          print("Waiting_time",waiting_time[i])
          
-turn_around[0]=0
+turn_around[0]=0 
 for i in range(inp):
          turn_around[i]+=waiting_time[i]+burst_time[i]
          print("Turn_around",turn_around[i])
