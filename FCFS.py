@@ -15,15 +15,15 @@ while i<inp:
     i=i+1
     
 for i in range(inp):
-    for j in range(inp-1):
+    for j in range(inp-i):
         if arrival_time[j]>arrival_time[j+1]:
                 temp=arrival_time[j]
                 arrival_time[j]=arrival_time[j+1]
                 arrival_time[j+1]=temp
-                if arrival_time[j] ==arrival_time[j+1]:
-                     temp = burst_time[j+1]
-		     burst_time[j+1] = burst_time[j]
-		     burst_time[j] = temp
+                if arrival_time[j]==arrival_time[j+1]:
+                     temp=burst_time[j+1]
+		     burst_time[j+1]=burst_time[j]
+		     burst_time[j]=temp
 				
                 print("Arrival_time", arrival_time[j], arrival_time[j+1])
                 print("Burst_time", Burst_time[j],burst_time[j+1])
@@ -31,7 +31,7 @@ for i in range(inp):
 waiting_time[0]=0
 for i in range(inp):
     waiting_time[i]=0
-    for j in range(i):
+    for j in range(inp-i):
          waiting_time[i]+=burst_time[j]
          print("Waiting_time",waiting_time[i])
          
