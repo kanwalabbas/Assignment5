@@ -35,7 +35,7 @@ while inp!=0:
         
     elif burst_time[i]<=time_slice & burst_time[i]>0:
         temp+=burst_time[i]
-        burst_time[i]=burst_time[i]-burst_time[i]
+        burst_time[i]=burst_time[i]-burst_time[i] 
         inp=inp-1
         
         waiting_time[i]+=temp-arrival_time[i]-burst_time[i]
