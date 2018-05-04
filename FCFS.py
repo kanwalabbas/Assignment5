@@ -21,8 +21,8 @@ for i in range(inp):
                 arrival_time[j+1]=temp
                 if arrival_time[j] ==arrival_time[j+1]:
                      temp = burst_time[j+1]
-		             burst_time[j+1] = burst_time[j]
-		             burst_time[j] = temp
+		     burst_time[j+1] = burst_time[j]
+		     burst_time[j] = temp
 				
                 print("Arrival_time", arrival_time[j], arrival_time[j+1])
                 print("Burst_time", Burst_time[j],burst_time[j+1])
