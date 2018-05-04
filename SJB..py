@@ -34,4 +34,4 @@ for i in range(inp):
 print("burst_time",burst_time[j],burst_time[j+1])                           
  print("waiting_time",waiting_time[i])
  
-print("""turn_aaround" ,turn_around[i])     
+print("""turn_aaround" ,turn_around[i])      
